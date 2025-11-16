@@ -1,4 +1,4 @@
-that# WindElements - Component Development Guide
+# WindElements - Component Development Guide
 
 ## Architecture Overview
 
