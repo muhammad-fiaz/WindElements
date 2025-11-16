@@ -1,8 +1,14 @@
 <div align="center">
 
+<img  alt="WindElements" src="https://github.com/user-attachments/assets/00789781-5bef-4cee-be7d-6365cc6263c3" />
 
-  <a href="https://www.npmjs.com/package/windelements"><img src="https://img.shields.io/npm/v/windelements" alt="NPM"></a>
-  <a href="https://www.npmjs.com/package/windelements"><img src="https://img.shields.io/npm/dm/windelements" alt="NPM - Downloads"></a>
+<br>
+  <p><em>Production-ready UI components for Vanilla JavaScript/TypeScript - like shadcn/ui but for vanilla JS.</em></p>
+  
+<br>
+
+<a href="https://www.npmjs.com/package/windelements"><img src="https://img.shields.io/npm/v/windelements" alt="NPM"></a>
+<a href="https://www.npmjs.com/package/windelements"><img src="https://img.shields.io/npm/dm/windelements" alt="NPM - Downloads"></a>
   <a href="https://muhammad-fiaz.github.io/WindElements/"><img src="https://img.shields.io/badge/docs-muhammad--fiaz.github.io-blue" alt="Documentation"></a>
   <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/typescript-%3E%3D5.0-brightgreen.svg" alt="Supported TypeScript"></a>
   <a href="https://github.com/muhammad-fiaz/WindElements"><img src="https://img.shields.io/github/stars/muhammad-fiaz/WindElements" alt="GitHub stars"></a>
@@ -19,7 +25,6 @@
   <a href="https://github.com/muhammad-fiaz/WindElements/actions/workflows/dependabot/dependabot-updates"><img src="https://github.com/muhammad-fiaz/WindElements/actions/workflows/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a>
   <a href="https://github.com/muhammad-fiaz/WindElements/actions/workflows/build.yml"><img src="https://github.com/muhammad-fiaz/WindElements/actions/workflows/build.yml/badge.svg" alt="Build"></a>
 
-  <p><em>Production-ready UI components for Vanilla JavaScript/TypeScript - like shadcn/ui but for vanilla JS.</em></p>
 
   **📚 [Documentation](https://muhammad-fiaz.github.io/WindElements/) | [API Reference](https://muhammad-fiaz.github.io/WindElements/components/) | [Quick Start](https://muhammad-fiaz.github.io/WindElements/guide/getting-started/)**
 </div>
