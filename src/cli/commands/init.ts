@@ -41,13 +41,14 @@ export async function init(options: { overwrite?: boolean } = {}) {
   const hasTailwind = await fs.pathExists(path.join(cwd, 'tailwind.config.js')) || 
                        await fs.pathExists(path.join(cwd, 'tailwind.config.ts'));
   
+  // Check if TypeScript is configured
+  if (!hasTypeScript) {
+    console.error(chalk.red('\n❌ TypeScript is not configured in this project. Please set up TypeScript first.'));
+    console.log(chalk.white('Run: npx tsc --init'));
+    process.exit(1);
+  }
+  
   const responses = await prompts([
-    {
-      type: 'confirm',
-      name: 'typescript',
-      message: 'Would you like to use TypeScript?',
-      initial: hasTypeScript
-    },
     {
       type: 'text',
       name: 'componentDir',
@@ -74,7 +75,7 @@ export async function init(options: { overwrite?: boolean } = {}) {
   }
   
   const config: Config = {
-    typescript: responses.typescript,
+    typescript: true,
     componentDir: responses.componentDir,
     utilsDir: responses.utilsDir,
     cssFile: responses.cssFile,
@@ -84,29 +85,46 @@ export async function init(options: { overwrite?: boolean } = {}) {
   const spinner = ora('Creating configuration file...').start();
   
   try {
-    // Check if Tailwind CSS is installed
+    // Check if package.json exists and has Tailwind CSS v4+ installed
     const packageJsonPath = path.join(cwd, 'package.json');
+    let hasValidTailwind = false;
+    
     if (await fs.pathExists(packageJsonPath)) {
       const packageJson = await fs.readJson(packageJsonPath);
       const deps = { ...packageJson.dependencies, ...packageJson.devDependencies };
       
-      if (!deps.tailwindcss) {
-        spinner.warn('Tailwind CSS not found!');
-        console.log(chalk.yellow('\n⚠️  Tailwind CSS is required. Please install it:\n'));
-        console.log(chalk.white('  bun add -D tailwindcss @tailwindcss/vite\n'));
-        
-        const { proceed } = await prompts({
-          type: 'confirm',
-          name: 'proceed',
-          message: 'Continue anyway?',
-          initial: false
-        });
-        
-        if (!proceed) {
-          process.exit(1);
+      if (deps.tailwindcss) {
+        // Check version - need v4 or above
+        const version = deps.tailwindcss.replace(/[^\d.]/g, '').split('.')[0];
+        if (parseInt(version) >= 4) {
+          hasValidTailwind = true;
         }
-        spinner.start('Creating configuration file...');
       }
+    } else {
+      spinner.warn('No package.json found!');
+      console.log(chalk.yellow('\n⚠️  package.json not found. Please initialize your project first:\n'));
+      console.log(chalk.white('  npm init -y\n'));
+      process.exit(1);
+    }
+    
+    if (!hasValidTailwind) {
+      spinner.warn('Tailwind CSS v4+ not found!');
+      console.log(chalk.yellow('\n⚠️  Tailwind CSS v4.1 or higher is required. Please install it:\n'));
+      console.log(chalk.white('  bun add -d tailwindcss@^4.1.0\n'));
+      console.log(chalk.gray('  # or with npm: npm install -D tailwindcss@^4.1.0\n'));
+      console.log(chalk.gray('  # or with yarn: yarn add -D tailwindcss@^4.1.0\n'));
+      
+      const { proceed } = await prompts({
+        type: 'confirm',
+        name: 'proceed',
+        message: 'Continue anyway?',
+        initial: false
+      });
+      
+      if (!proceed) {
+        process.exit(1);
+      }
+      spinner.start('Creating configuration file...');
     }
     
     // Create config file
