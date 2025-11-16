@@ -17,7 +17,7 @@ hero:
       link: /components/
     - theme: alt
       text: GitHub
-      link: https://github.com/muhammad-fiaz/windelements
+      link: https://github.com/muhammad-fiaz/WindElements
 
 features:
   - icon: 🎨

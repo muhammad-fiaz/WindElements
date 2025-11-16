@@ -194,7 +194,7 @@ npx windelements@latest add --all --overwrite
 
 If you prefer not to use the CLI, you can manually copy components:
 
-1. Copy the component file from the [GitHub repository](https://github.com/muhammad-fiaz/windelements/tree/main/src/components)
+1. Copy the component file from the [GitHub repository](https://github.com/muhammad-fiaz/WindElements/tree/main/src/components)
 2. Copy `src/utils/index.ts` to your project
 3. Add OKLCH variables to your CSS
 4. Import and use the component
@@ -252,5 +252,5 @@ WindElements works with Next.js! Use the same installation steps.
 
 ## Need Help?
 
-- [GitHub Issues](https://github.com/muhammad-fiaz/windelements/issues)
-- [Discussions](https://github.com/muhammad-fiaz/windelements/discussions)
+- [GitHub Issues](https://github.com/muhammad-fiaz/WindElements/issues)
+- [Discussions](https://github.com/muhammad-fiaz/WindElements/discussions)

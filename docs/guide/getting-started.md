@@ -166,6 +166,6 @@ const button = new Button(props);
 
 ## Need Help?
 
-- [GitHub Issues](https://github.com/muhammad-fiaz/windelements/issues)
-- [Discussions](https://github.com/muhammad-fiaz/windelements/discussions)
+- [GitHub Issues](https://github.com/muhammad-fiaz/WindElements/issues)
+- [Discussions](https://github.com/muhammad-fiaz/WindElements/discussions)
 - [Twitter](https://twitter.com/muhammad_o_faiz)
