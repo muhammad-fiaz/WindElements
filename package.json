@@ -1,6 +1,6 @@
 {
   "name": "windelements",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Production-ready UI components for Vanilla JS/TS - like shadcn/ui but for vanilla JavaScript",
   "type": "module",
   "main": "./dist/index.js",

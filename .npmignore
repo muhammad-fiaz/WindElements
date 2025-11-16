@@ -1,4 +1,5 @@
 # Source files (we include dist/ instead)
+src/
 *.ts
 !*.d.ts
 
