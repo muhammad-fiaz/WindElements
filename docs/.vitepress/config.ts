@@ -159,7 +159,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-present Muhammad Fiaz'
+      copyright: 'Copyright © 2025-present Muhammad Fiaz'
     },
 
     search: {

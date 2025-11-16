@@ -16,14 +16,9 @@
   <a href="https://github.com/muhammad-fiaz/WindElements/pulls"><img src="https://img.shields.io/github/issues-pr/muhammad-fiaz/WindElements" alt="GitHub pull requests"></a>
   <a href="https://github.com/muhammad-fiaz/WindElements"><img src="https://img.shields.io/github/last-commit/muhammad-fiaz/WindElements" alt="GitHub last commit"></a>
   <a href="https://github.com/muhammad-fiaz/WindElements/releases"><img src="https://img.shields.io/github/v/release/muhammad-fiaz/WindElements" alt="GitHub release"></a>
-  <a href="https://codecov.io/gh/muhammad-fiaz/WindElements"><img src="https://codecov.io/gh/muhammad-fiaz/WindElements/graph/badge.svg?token=1G3MU8SDX1" alt="codecov"></a>
   <a href="https://github.com/muhammad-fiaz/WindElements"><img src="https://img.shields.io/github/license/muhammad-fiaz/WindElements" alt="License"></a>
   <a href="https://github.com/muhammad-fiaz/WindElements/actions/workflows/deploy.yml"><img src="https://github.com/muhammad-fiaz/WindElements/actions/workflows/deploy.yml/badge.svg" alt="Deploy Documentation"></a>
   <a href="https://github.com/muhammad-fiaz/WindElements/actions/workflows/publish.yml"><img src="https://github.com/muhammad-fiaz/WindElements/actions/workflows/publish.yml/badge.svg" alt="Publish NPM"></a>
-  <a href="https://github.com/muhammad-fiaz/WindElements/actions/workflows/testing.yml"><img src="https://github.com/muhammad-fiaz/WindElements/actions/workflows/testing.yml/badge.svg" alt="Testing"></a>
-  <a href="https://github.com/muhammad-fiaz/WindElements/actions/workflows/github-code-scanning/codeql"><img src="https://github.com/muhammad-fiaz/WindElements/actions/workflows/github-code-scanning/codeql/badge.svg" alt="CodeQL"></a>
-  <a href="https://github.com/muhammad-fiaz/WindElements/actions/workflows/dependabot/dependabot-updates"><img src="https://github.com/muhammad-fiaz/WindElements/actions/workflows/dependabot/dependabot-updates/badge.svg" alt="Dependabot Updates"></a>
-  <a href="https://github.com/muhammad-fiaz/WindElements/actions/workflows/build.yml"><img src="https://github.com/muhammad-fiaz/WindElements/actions/workflows/build.yml/badge.svg" alt="Build"></a>
 
 
   **📚 [Documentation](https://muhammad-fiaz.github.io/WindElements/) | [API Reference](https://muhammad-fiaz.github.io/WindElements/components/) | [Quick Start](https://muhammad-fiaz.github.io/WindElements/guide/getting-started/)**
